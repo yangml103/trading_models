@@ -39,8 +39,9 @@ S = 100        # Current spot price
 K = 100        # Strike price
 T = 1          # Time to maturity (1 year)
 r = 0.05       # Risk-free interest rate (5%)
-sigma = 20     # Volatility (standard deviation of price)
+sigma_percentage = 0.20      # Percentage volatility (20%)
+sigma_absolute = sigma_percentage * S   # Convert to absolute volatility
 option_type = 'call'  # Type of the option
 
-price = bachelier_option_price(S, K, T, r, sigma, option_type)
+price = bachelier_option_price(S, K, T, r, sigma_absolute, option_type)
 print(f"The price of the {option_type} option is: {price:.2f}")
