@@ -4,8 +4,8 @@ from scipy.stats import norm
 def black_scholes(S, K, T, r, sigma, option_type='call'):
     """
     Calculate the Black-Scholes option price for a European option.
-    
-    NOTE: Assumes price of asset is always greater than 0
+
+    NOTE: Assumes price of asset is always greater than 0, and constant volatility - in actuality, implied volatilities vary with strike price and maturity
 
     Parameters:
     - S: Spot price of the underlying asset

@@ -113,7 +113,7 @@ def binomial_option_pricing_american(S, K, T, r, sigma, N, option_type='call'):
 # Example usage:
 if __name__ == "__main__":
     S = 100.0    # Current stock price
-    K = 100.0    # Strike price at the momeny
+    K = 110.0    # Strike price 
     T = 1.0      # Time to maturity (1 year)
     r = 0.05     # Risk-free interest rate (5%)
     sigma = 0.2  # Volatility (20%)
